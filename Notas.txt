@@ -65,9 +65,14 @@
     ***** Instalar Django-crispy-forms *****
     - En la carpeta del Proyecto Web:
 	pip install django-crispy-forms
+    pip install crispy-bootstrap4
+
     - En settings.py del proyecto (Proyecto Web - Segunda Carpeta o Carpeta con el mismo nombre del Proyecto)
 	INSTALLED_APPS = [
 	   	'crispy_forms',
+        "crispy_bootstrap4",
 	]
+
+    CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
 	CRISPY_TEMPLATE_PACK='bootstrap4'
 
